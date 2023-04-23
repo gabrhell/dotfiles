@@ -6,5 +6,7 @@ local function map(mode, lhs, rhs, opts)
 	vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
-map('n', '<C-n>', ':bn<CR>')
-map('n', '<C-p>', ':bp<CR>')
+map('n', '<C-n>', '<CMD>bn<CR>')
+map('n', '<C-p>', '<CMD>bp<CR>')
+
+map('n', 'T', '<CMD>Trouble<CR>')
